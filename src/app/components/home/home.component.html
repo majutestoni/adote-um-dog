@@ -1,0 +1,9 @@
+<div class="d-flex justify-content-center mt-3">
+  <h1>Dogs</h1>
+</div>
+
+<div class="imagens col mt-4">
+  <div *ngFor="let img of arrayImagens">
+    <app-home-item [imgReceber]="img"></app-home-item>
+  </div>
+</div>
