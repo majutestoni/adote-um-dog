@@ -1,4 +1,9 @@
-.img-thumbnail{
-    border: 2px solid rgb(109, 49, 0);
-    border-radius: 6px;
+.img-thumbnail {
+  width: 100%;
+  border: none;
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-around;
 }

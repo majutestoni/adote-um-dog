@@ -12,4 +12,12 @@ export class HomeItemComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  public liked() {
+    let body = {
+      image_id: this.imgReceber.id,
+      dub_id: 'teste',
+      valor: 1,
+    };
+    this.apiService.setVoto(body).subscribe((item) => console.log('deu certo'));
+  }
 }
