@@ -7,12 +7,14 @@ import { HomeComponent } from './components/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeItemComponent } from './components/home/home-item/home-item.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CadastroComponent } from './components/cadastro/cadastro/cadastro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HomeItemComponent
+    HomeItemComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,
