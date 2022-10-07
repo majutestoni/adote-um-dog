@@ -1,7 +1,6 @@
 .imagens {
   margin-top: -5%;
-  width: 100%;
-  max-height: 70vh;
+ height: 70vh;
   overflow-y: scroll;
   display: flex;
   flex-wrap: wrap;
@@ -116,16 +115,18 @@ i {
 }
 
 .footer {
-  max-height: 10vh;
+  height: 5vh;
   margin-bottom: 0;
 }
 
 .header {
-  max-height: 5vh;
-  margin-left: 1em;
+  height: 6vh;
+  margin-top: 2%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  margin-left: 0.5em;
 
   h1 {
     font-family: "Pacifico", cursive;
@@ -133,7 +134,6 @@ i {
 
   .lado-direito {
     justify-content: space-evenly;
-    margin-right: 0.5em;
     i {
       padding: 4px;
       font-size: 1.5em;
@@ -141,6 +141,10 @@ i {
   }
 
 }
+
 .body{
-  max-width: 800px;
+max-width: 700px;
+border: 1px solid #495057;
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+margin-left: 1em;
 }
