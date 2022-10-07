@@ -8,13 +8,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeItemComponent } from './components/home/home-item/home-item.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CadastroComponent } from './components/cadastro/cadastro.component';
+import { HomeHomeComponent } from './components/home/home-home/home-home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HomeItemComponent,
-    CadastroComponent
+    CadastroComponent,
+    HomeHomeComponent,
   ],
   imports: [
     BrowserModule,

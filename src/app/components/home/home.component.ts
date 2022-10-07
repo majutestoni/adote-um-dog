@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ApiService } from '../api/api.service';
 
 @Component({
@@ -7,7 +8,8 @@ import { ApiService } from '../api/api.service';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  public arrayImagens;
+  public showHome = true
+
   public images = [
     {
       img: 'https://img.freepik.com/vetores-premium/o-avatar-do-perfil-de-usuario-feminino-e-uma-mulher-um-personagem-para-um-protetor-de-tela-com-emocoes_505620-617.jpg',
@@ -31,18 +33,22 @@ export class HomeComponent implements OnInit {
     },
   ];
 
-  constructor(private apiService: ApiService) {}
-
+  constructor(private apiService: ApiService,private router: Router ) {}
   ngOnInit(): void {
-     this.click();
   }
 
-  click() {
-    this.apiService.cobsomeApi().subscribe((item) => {
-      console.log(item);
-      this.arrayImagens = item;
-    });
+  acessaHome(){
+this.showHome = true
+//this.router.navigate(['/'])
+
   }
+
+  acessaCadastro(){
+this.showHome = false
+//this.router.navigate(['/cadastro'])
+  }
+
+
 }
 
 export interface imagens {

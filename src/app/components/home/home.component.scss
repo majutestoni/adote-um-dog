@@ -86,7 +86,12 @@ i {
   border-top-right-radius: 0rem !important;
   border-top-left-radius: 0rem !important;
   font-size: 12px;
+  cursor: pointer;
   font-weight: 600;
+}
+
+.nav-link-1:hover{
+  color: #1f2327;
 }
 
 .nav-link-2 {
@@ -97,6 +102,17 @@ i {
   border-top-left-radius: 0rem !important;
   font-size: 12px;
   font-weight: 600;
+  cursor: pointer;
+}
+
+.nav-link-2::after{
+  color: #495057;
+  background-color: #fafafa !important;
+  border-color: gray #fff #fff !important;
+}
+
+.nav-link-2:hover{
+  color: #1f2327;
 }
 
 .footer {
@@ -123,4 +139,8 @@ i {
       font-size: 1.5em;
     }
   }
+
+}
+.body{
+  max-width: 800px;
 }
